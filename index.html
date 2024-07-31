@@ -7,48 +7,43 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#departments">Departments</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>This is My University Website</h1>
-            <img src="https://dev.kwust.ac.ke/wp-content/uploads/2023/12/Admin-Block.jpg">
-            <p>Kiriri Women’s University of Science and Technology (KWUST) is a private, women’s only Kenyan university. As a women’s only university, our main objective is to bridge the gap in gender representation in higher education as well as contributing to the social and economic development of the country. The university was founded in 2002 and is accredited by The Commission for University Education (CUE).
-            </p>
-            <hr>
-        </section>
+    <h1>This is my university website</h1><hr></hr>
+    <script src="script.js" defer></script>
 
-        <section id="about-us">
-            <h2>About Us</h2>
-            <p>Kiriri Women’s University is a leading institution dedicated to academic excellence.</p>
-        </section>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openCity(event, 'About Us')">About Us</button>
+        <button class="tablinks" onclick="openCity(event, 'Departments')">Departments</button>
+        <button class="tablinks" onclick="openCity(event, 'Contact Us')">Contact Us</button>
+    </div>
+    
+    <div id="Home" class="tabcontent">
+        <h2>Home</h2>
+        <p>Welcome to Kiriri</p>
+        <img src="https://dev.kwust.ac.ke/wp-content/uploads/2023/12/Admin-Block.jpg">
+    </div>
+    <div id="About Us" class="tabcontent">
+        <h3>About Us</h3>
+        <p>Kiriri Women's  university is a leading institution dedicated to academic excellence. </p>
+    </div>
 
-        <section id="departments">
-            <h2>Departments</h2>
-            <ol>
-                <li>Computer Science</li>
-                <li>Mathematics</li>
-                <li>Business</li>
-                <li>Education</li>
-                <li>Hospitality</li>
-                <li>Information Technology</li>
-            </ol>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p><strong>Address:</strong> Kiriri Women’s University of Science & Technology, off Thika Road</p>
-            <p><strong>Email:</strong> info@kwust.ac.ke</p>
-            <p><strong>Phone:</strong> +254 (0) 202042692/3</p>
-        </section>
-    </main>
+    <div id="Departments" class="tabcontent">
+        <h4>In Kiriri University there are various departments;</h4>
+        <ul>
+            <li>Computer Science</li>
+            <li>Mathematics</li>
+            <li>Business</li>
+            <li>Education</li>
+            <li>Hospitality</li>
+            <li>Information Technology</li>
+        </ul>
+    </div>
+    <div id="Contact Us" class="tabcontent">
+        <h5>For more information you can reach us through;</h5>
+        <p>Address; KIRIRI UNIVERSITY P.O BOX 2333, Nairobi <br></br>
+            Email; info@kwust.ac.ke<br></br>
+            Phone; +254702 000 089<br></br>
+        </p>
+    </div>
 </body>
 </html>
